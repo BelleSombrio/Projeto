@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripth.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="titulo">
+            <h1>MiniGames</h1>
+            <p>Divirta-se enquanto aprende matemática e português!</p>
+        </div>
+    </header>
+
+    
+    <div class="caixinhas">
+
+        <h2 class="texto-caixinha">Matemática</h2>
+        <div class="grupo">
+
+            <div class="container" id="container1">
+                <h2>Adição</h2>
+                <p class="explicacao">Resolva o cálculo</p>
+                <p class="pergunta" id="pergunta1">Quanto é 7 + 3?</p>
+                <input type="text" class="resposta" id="resposta1" placeholder="Digite sua resposta">
+                <br>
+                <button class="responder" onclick="verificarResposta('resposta1')">Verificar</button>
+                <p class="mensagem" id="mensagem1"></p>
+                <p class="parabens" id="parabens1"></p> <!-- Mensagem de parabéns -->
+            </div>
+            
+            <div class="container" id="container2">
+                <h2>Multiplicação</h2>
+                <p class="explicacao">Pratique a multiplicação por 2</p>
+                <p class="pergunta" id="pergunta2">Qual é o dobro de 8?</p>
+                <input type="text" class="resposta" id="resposta2" placeholder="Digite sua resposta">
+                <br>
+                <button class="responder" onclick="verificarResposta('resposta2')">Verificar</button>
+                <p class="mensagem" id="mensagem2"></p>
+                <p class="parabens" id="parabens2"></p> <!-- Mensagem de parabéns -->
+            </div>
+ 
+            <div class="container" id="container3">
+                <h2>Divisão</h2>
+                <p class="explicacao">Divida 10 balas entre 2 crianças.</p>
+                <p class="pergunta" id="pergunta3">Quantas balas cada criança ganhará?</p>
+                <input type="text" class="resposta" id="resposta3" placeholder="Digite sua resposta">
+                <br>
+                <button class="responder" onclick="verificarResposta('resposta3')">Verificar</button>
+                <p class="mensagem" id="mensagem3"></p>
+                <p class="parabens" id="parabens3"></p> <!-- Mensagem de parabéns -->
+            </div>
+
+            <div class="container" id="container4">
+                <h2>Subtração</h2>
+                <p class="explicacao">Se Sofia tem 10 balas e deu 4 balas para um amigo</p>
+                <p class="pergunta" id="pergunta4">Com quantas balas ela ficará?</p>
+                <input type="text" class="resposta" id="resposta4" placeholder="Digite sua resposta">
+                <br>
+                <button class="responder" onclick="verificarResposta('resposta4')">Verificar</button>
+                <p class="mensagem" id="mensagem4"></p>
+                <p class="parabens" id="parabens4"></p> <!-- Mensagem de parabéns -->
+            </div>
+
+            <div class="container" id="container5">
+                <h2>Adição</h2>
+                <p class="explicacao">Se Leo tem 10 balas e deu 5 balas para um amigo</p>
+                <p class="pergunta" id="pergunta5">Com quantas balas Leo ficará no final?</p>
+                <input type="text" class="resposta" id="resposta5" placeholder="Digite sua resposta">
+                <br>
+                <button class="responder" onclick="verificarResposta('resposta5')">Verificar</button>
+                <p class="mensagem" id="mensagem5"></p>
+                <p class="parabens" id="parabens5"></p> <!-- Mensagem de parabéns -->
+            </div>
+
+            <div class="container" id="container6">
+                <h2>Multiplicação</h2>
+                <p class="explicacao">Um carrinho custa R$2.</p>
+                <p class="pergunta" id="pergunta6">Quantos reais custarão 3 carrinhos?</p>
+                <input type="text" class="resposta" id="resposta6" placeholder="Digite sua resposta">
+                <br>
+                <button class="responder" onclick="verificarResposta('resposta6')">Verificar</button>
+                <p class="mensagem" id="mensagem6"></p>
+                <p class="parabens" id="parabens6"></p> <!-- Mensagem de parabéns -->
+            </div>
+
+            <div class="container" id="container7">
+                <h2>Divisão</h2>
+                <p class="explicacao">Divida 6 brinquedos para 3 amigos.</p>
+                <p class="pergunta" id="pergunta7">Cada um ficaria com quantos brinquedos?</p>
+                <input type="text" class="resposta" id="resposta7" placeholder="Digite sua resposta">
+                <br>
+                <button class="responder" onclick="verificarResposta('resposta7')">Verificar</button>
+                <p class="mensagem" id="mensagem7"></p>
+                <p class="parabens" id="parabens7"></p> <!-- Mensagem de parabéns -->
+            </div>
+
+            <div class="container" id="container8">
+                <h2>Subtração</h2>
+                <p class="explicacao">Tinha 8 maçãs e Julia comeu 3.</p>
+                <p class="pergunta" id="pergunta8">Quantas sobraram?</p>
+                <input type="text" class="resposta" id="resposta8" placeholder="Digite sua resposta">
+                <br>
+                <button class="responder" onclick="verificarRespostaNivel('resposta8')">Verificar</button>
+                <p class="mensagem" id="mensagem8"></p>
+                <p class="parabens" id="parabens8"></p> <!-- Mensagem de parabéns -->
+            </div>
+
+        </div>
+
+        <hr>
+
+        <h2 class="texto-caixinha">Português</h2>
+        <div class="grupo">
+
+            <div class="container" id="container9">
+                <h2>Acentuação</h2>
+                <p class="explicacao">Como se escreve corretamnete a palavra:</p>
+                <p class="pergunta" id="pergunta9">"paz" ou "páz"?</p>
+                <input type="text" class="resposta" id="resposta9" placeholder="Digite sua resposta">
+                <br>
+                <button class="responder" onclick="verificarResposta('resposta9')">Verificar</button>
+                <p class="mensagem" id="mensagem9"></p>
+                <p class="parabens" id="parabens9"></p> 
+            </div>
+
+            <div class="container" id="container10">
+                <h2>Complete a frase</h2>
+                <p class="explicacao">Complete a frase: </p>
+                <p class="pergunta" id="pergunta10">"Eu ____ uma maçã.</p>
+                <input type="text" class="resposta" id="resposta10" placeholder="Digite sua resposta">
+                <br>
+                <button class="responder" onclick="verificarResposta('resposta10')">Verificar</button>
+                <p class="mensagem" id="mensagem10"></p>
+                <p class="parabens" id="parabens10"></p> 
+            </div>
+
+            <div class="container" id="container11">
+                <h2>Gênero Gramatical</h2>
+                <p class="explicacao">Escreva o feminino da palavra destacada.</p>
+                <p class="pergunta" id="pergunta11">Qual é o feminino de "professor"</p>
+                <input type="text" class="resposta" id="resposta11" placeholder="Digite sua resposta">
+                <br>
+                <button class="responder" onclick="verificarResposta('resposta11')">Verificar</button>
+                <p class="mensagem" id="mensagem11"></p>
+                <p class="parabens" id="parabens11"></p>
+            </div>
+
+            <div class="container" id="container12">
+                <h2>Antônimo</h2>
+                <p class="explicacao">Escreva o antônimo da palavra destacada.</p>
+                <p class="pergunta" id="pergunta12"> Qual é o antônimo de "frio"?</p>
+                <input type="text" class="resposta" id="resposta12" placeholder="Digite sua resposta">
+                <br>
+                <button class="responder" onclick="verificarResposta('resposta12')">Verificar</button>
+                <p class="mensagem" id="mensagem12"></p>
+                <p class="parabens" id="parabens12"></p> <!-- Mensagem de parabéns -->
+            </div>
+
+            <div class="container" id="container13">
+                <h2>Acentuação</h2>
+                <p class="explicacao">Escreva a palavra corretamente com acento.</p>
+                <p class="pergunta" id="pergunta13"> Como se escreve corretamente: heroico ou heróico?</p>
+                <input type="text" class="resposta" id="resposta13" placeholder="Digite sua resposta">
+                <br>
+                <button class="responder" onclick="verificarResposta('resposta13')">Verificar</button>
+                <p class="mensagem" id="mensagem13"></p>
+                <p class="parabens" id="parabens13"></p> 
+            </div>
+
+            <div class="container" id="container14">
+                <h2>Complete a frase</h2>
+                <p class="explicacao">Escreva a palavra que completa corretamente a frase.</p>
+                <p class="pergunta" id="pergunta14"> A menina foi ao parque para brincar no ____.</p>
+                <input type="text" class="resposta" id="resposta14" placeholder="Digite sua resposta">
+                <br>
+                <button class="responder" onclick="verificarResposta('resposta14')">Verificar</button>
+                <p class="mensagem" id="mensagem14"></p>
+                <p class="parabens" id="parabens14"></p> 
+            </div>
+
+            <div class="container" id="container15">
+                <h2>Plural</h2>
+                <p class="explicacao">Escreva a palavra no plural:</p>
+                <p class="pergunta" id="pergunta15">Qual é o plural de "cachorro"?</p>
+                <input type="text" class="resposta" id="resposta15" placeholder="Digite sua resposta">
+                <br>
+                <button class="responder" onclick="verificarResposta('resposta15')">Verificar</button>
+                <p class="mensagem" id="mensagem15"></p>
+                <p class="parabens" id="parabens15"></p> 
+            </div>
+
+            <div class="container" id="container16">
+                <h2>Verbos no Passado</h2>
+                <p class="explicacao">Escreva a forma no passado do verbo:</p>
+                <p class="pergunta" id="pergunta16">Qual é o passado de "correr"?</p>
+                <input type="text" class="resposta" id="resposta16" placeholder="Digite sua resposta">
+                <br>
+                <button class="responder" onclick="verificarResposta('resposta16')">Verificar</button>
+                <p class="mensagem" id="mensagem16"></p>
+                <p class="parabens" id="parabens16"></p> 
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+
+header {
+    background-color: rgb(67, 127, 255);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 5px;
+}
+
+p {
+    font-size: smaller;
+    margin-top: 5px;
+    color: white;
+}
+
+.titulo {
+    padding: 15px;
+}
+
+.caixinhas {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.grupo {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.container {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    height: 280px;
+    width: 23%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.container h2 {
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 5px; /* Garantir que haja um espaçamento entre o título e a pergunta */
+}
+
+.responder {
+    background-color:  rgb(67, 127, 255);
+    color: white;
+    height: 30px;
+    width: 200px;
+    min-width: 200px; /* Garantindo que a largura mínima seja 220px */
+    min-height: 30px; /* Garantindo que a altura mínima seja 40px */
+    border: 1px solid rgb(31, 82, 191);
+    font-size: x-small;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.container .explicacao {
+    font-size: small;
+    color: black;
+    text-align: center;
+}
+
+.container .pergunta {
+    font-size: medium;
+    color: rgb(31, 82, 191);
+    text-align: center; 
+    margin-bottom: 15px;
+}
+
+.resposta {
+    width: 200px;
+   
+    height: 30px;
+    border: 1px solid #aeaeae;
+    border-radius: 5px;
+    
+    text-align: center; /* Centraliza o texto dentro do input */
+}
+
+.texto-caixinha {
+    font-size:large;
+    color: rgb(31, 82, 191);
+    
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+.contador {
+    background-color: rgb(31, 82, 191);
+    border: 1px solid  rgb(12, 52, 138);
+    height: 23px;
+    width: 70px;
+    text-align: center;
+    color: white;
+}
+
